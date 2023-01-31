@@ -1,4 +1,3 @@
-using OctoEvents.API.Attributes;
 using OctoEvents.CrossCutting.IoC.DI;
 using OctoEvents.Domain.ViewModel;
 using System.Runtime.CompilerServices;
