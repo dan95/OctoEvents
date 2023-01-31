@@ -1,0 +1,14 @@
+version: "3.7"
+services:
+  sql_server:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: octo_events
+    ports:
+      - 1433:1433
+    volumes:
+      - sql_data:/var/lib/mssqlql/data
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=S8h0s98dynadns
+volumes:
+  sql_data:
